@@ -74,6 +74,7 @@ img.header-bug {
 @font-face {
   font-family: "inter";
   src: url("Inter-Regular.ttf");
+  font-display: swap;
 }
 
 * {
