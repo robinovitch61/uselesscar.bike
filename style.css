@@ -1,0 +1,145 @@
+/*standard "css reset" stuff*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*hide mobile things unless on mobile*/
+.mobile {
+  display: none;
+}
+
+/*body*/
+body {
+  background-color: #E1E1E1;
+  display: flex;
+  justify-content: center;
+  color: #B60062;
+}
+
+/*content*/
+.content {
+  width: 70%;
+  max-width: 800px;
+}
+
+/*header*/
+header {
+  margin: 1em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+img.header-bug {
+  max-width: 150px;
+}
+
+.header-underline {
+  width: 120%;
+  border-top: 2px solid black;
+  align-self: center;
+}
+
+/*typography*/
+@font-face {
+  font-family: "inter";
+  src: url("Inter-Regular.ttf");
+}
+
+* {
+  font-family: inter, sans-serif;
+  font-weight: normal;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+a {
+  color: unset;
+}
+
+/*site content*/
+section {
+  margin: 25px 0;
+}
+
+.site-content {
+  padding-bottom: 40px;
+}
+
+/*mobile*/
+@media only screen and (max-width: 800px) {
+  /*hide desktop things and show mobile things on mobile*/
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: unset;
+  }
+
+  /*other styling for mobile*/
+  .content {
+    width: 85%;
+  }
+
+  header {
+    align-items: flex-start;
+  }
+
+  .header-content {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .header-underline {
+    width: 110%;
+  }
+
+  img.header-bug {
+    width: 80%;
+    max-width: 400px;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  .subtitle {
+    font-size: 20px;
+  }
+}
