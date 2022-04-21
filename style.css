@@ -26,6 +26,11 @@ img, picture, video, canvas, svg {
   display: none;
 }
 
+/*prevent safari changing font size in landscape*/
+html {
+  -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape while allowing user zoom */
+}
+
 /*body*/
 body {
   background-color: #E1E1E1;
