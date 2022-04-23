@@ -95,6 +95,10 @@ section {
   margin: 25px 0;
 }
 
+p {
+  margin-bottom: 1em;
+}
+
 .site-content {
   padding-bottom: 40px;
 }
