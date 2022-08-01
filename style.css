@@ -21,6 +21,10 @@ img, picture, video, canvas, svg {
   max-width: 100%;
 }
 
+img {
+  padding: 0.5em 0;
+}
+
 /*hide mobile things unless on mobile*/
 .mobile {
   display: none;
